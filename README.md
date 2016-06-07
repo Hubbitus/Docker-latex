@@ -1,5 +1,4 @@
-
-cker-latex
+# Docker-latex
 Latex docker build with Russian fonts to use in gitlab-ci builder
 
 Initially based on https://github.com/natlownes/docker-latex but updated to use `ubuntu:15.04` and additionally include next packages:
