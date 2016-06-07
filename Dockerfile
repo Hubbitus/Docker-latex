@@ -22,7 +22,4 @@ RUN sed -ri 's/(universe)$/\1 multiverse/g' /etc/apt/sources.list \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-#?		ttf-mscorefonts-installer \
-# Requires accept EULA
-
 WORKDIR /source
