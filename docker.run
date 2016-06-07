@@ -1,0 +1,3 @@
+pushd /home/pasha/Projects/RLH/documentation/
+docker run -it --rm -v `pwd`:/source hubbitus/latex pdflatex -synctex=1 -interaction=nonstopmode -output-directory target ff.tex
+popd
