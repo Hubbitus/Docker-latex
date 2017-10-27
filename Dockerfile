@@ -1,5 +1,5 @@
-FROM debian:stretch
-MAINTAINER Pavel Alexeev <PAhan@Hubbitus.info>
+FROM debian:buster
+MAINTAINER Pavel Alexeev <Pahan@Hubbitus.info>
 # Based on https://github.com/natlownes/docker-latex
 
 # we need multiverse and non-free for ttf-mscorefonts-installer (http://packages.ubuntu.com/ru/precise/ttf-mscorefonts-installer)
@@ -10,8 +10,8 @@ RUN sed -ri 's/(main)$/\1 contrib non-free/g' /etc/apt/sources.list \
 	&& apt-get install -y \
 		texlive-latex-base \
 		texlive-xetex \
-		latex-xcolor \
-		texlive-math-extra \
+		texlive-latex-extra \
+		texlive-latex-recommended \
 		texlive-latex-extra \
 		fontconfig \
 		\
